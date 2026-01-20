@@ -25,6 +25,6 @@ with st.spinner("Memuat data..."):
 
 st.dataframe(df, use_container_width=True)
 
-# st.subheader("Ringkasan numerik")
-# summary = summarize(df)
-# st.dataframe(summary, use_container_width=True)
+st.subheader("Ringkasan numerik")
+summary = summarize(df)
+st.dataframe(summary, use_container_width=True)
