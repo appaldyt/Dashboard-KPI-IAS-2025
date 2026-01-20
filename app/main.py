@@ -1,7 +1,9 @@
-import sys
+﻿import sys
 from pathlib import Path
 
 import streamlit as st
+
+#Melakukan update data
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -23,6 +25,6 @@ with st.spinner("Memuat data..."):
 
 st.dataframe(df, use_container_width=True)
 
-st.subheader("Ringkasan numerik")
-summary = summarize(df)
-st.dataframe(summary, use_container_width=True)
+# st.subheader("Ringkasan numerik")
+# summary = summarize(df)
+# st.dataframe(summary, use_container_width=True)
